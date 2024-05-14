@@ -48,7 +48,7 @@
 
                     <tr>
                         <td>To:</td>
-                        <td style="display: flow; gap: 6px;">
+                        <td class="reciplist">
                             <template v-if="message">
                                 <div v-for="recip in message.to" :key="recip">
                                     <strong v-if="message.deliveredTo.includes(recip)">{{recip}}</strong>
@@ -59,7 +59,7 @@
                     </tr>
                     <tr v-if="message && message.cc.length">
                         <td>Cc:</td>
-                        <td style="display: flow; gap: 6px;">
+                        <td class="reciplist">
                             <template v-if="message">
                                 <div v-for="recip in message.cc" :key="recip">
                                     <strong v-if="message.deliveredTo.includes(recip)">{{recip}}</strong>
@@ -70,7 +70,7 @@
                     </tr>
                     <tr v-if="message && message.bcc.length">
                         <td>Bcc:</td>
-                        <td style="display: flow; gap: 6px;">
+                        <td class="reciplist">
                             <template v-if="message">
                                 <div v-for="recip in message.bcc" :key="recip">
                                     <strong v-if="message.deliveredTo.includes(recip)">{{recip}}</strong>

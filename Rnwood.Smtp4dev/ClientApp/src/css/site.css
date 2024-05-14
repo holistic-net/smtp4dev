@@ -92,6 +92,13 @@ html, body {
     margin-top: 0;
 }
 
+.reciplist {
+    display: flow;
+    gap: 6px;
+    overflow: scroll;
+    max-height: 5.5em;
+}
+
 
 
 

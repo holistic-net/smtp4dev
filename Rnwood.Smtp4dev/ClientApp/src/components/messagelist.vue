@@ -96,7 +96,7 @@
                              width="180"
                              sortable="custom">
                 <template #default="scope">
-                    <div style="display: flow; gap: 6px;">
+                    <div class="reciplist">
                         <div v-for="recip in scope.row.to" :key="recip">
                             <strong v-if="scope.row.deliveredTo.includes(recip)">{{recip}}</strong>
                             <span v-if="!scope.row.deliveredTo.includes(recip)">{{recip}}</span>
